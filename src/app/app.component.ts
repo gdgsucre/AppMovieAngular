@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title:string = 'MoviesApp';
+  age:number = 25;
+  developer:boolean = true;
+
 }
