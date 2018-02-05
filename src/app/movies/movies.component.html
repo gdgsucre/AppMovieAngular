@@ -1,3 +1,15 @@
-<p>
-  movies works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="card card-movie" style="width: 18rem;" *ngFor="let movie of movies">
+        <img class="card-img-top" src="{{ movie.image }}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{ movie.title }}</h5>
+          <p class="card-text">{{ movie.production }}</p>
+          <a href="javascript:void(0)" class="btn btn-danger" (click)="deleteMovie(movie._id)">X</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
